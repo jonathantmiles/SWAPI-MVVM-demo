@@ -22,9 +22,7 @@ import Foundation
 
 protocol CharacterViewModelDelegate: AnyObject {
     func fetchCharacters()
-    func didFinishFetchingData(isTrue: Bool) -> Bool
-//    var delegate: CharacterViewModelDelegate { get set }
-//    func didFinishFetchingData(viewModel: IsCharacterViewModel)
+    var delegate: CharacterDidFinishDownloadingDelegate? { get set }
 }
 
 protocol CharacterDidFinishDownloadingDelegate: AnyObject {
@@ -35,17 +33,9 @@ let requestURL = URL(string: "https://swapi.co/api/people/")!
 
 class CharacterViewModel: CharacterViewModelDelegate {
     
-    func didFinishFetchingData(isTrue: Bool) -> Bool {
-        return isTrue
-    }
-    
     weak var delegate: CharacterDidFinishDownloadingDelegate?
 
-    var characters: [SWAPICharacter]? {
-        didSet {
-//            didFinishFetchingData(isTrue: true)
-        }
-    }
+    var characters: [SWAPICharacter]?
 
     func fetchCharacters() {
         

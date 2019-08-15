@@ -14,6 +14,7 @@
 		F827B0772303336700F9AA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F827B0752303336700F9AA6A /* LaunchScreen.storyboard */; };
 		F827B07F230333D000F9AA6A /* Character View Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827B07E230333D000F9AA6A /* Character View Model.swift */; };
 		F827B081230336CD00F9AA6A /* SWAPICharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827B080230336CD00F9AA6A /* SWAPICharacter.swift */; };
+		F89AFED62304ECBE00BD2F4F /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89AFED52304ECBE00BD2F4F /* CharacterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F827B0782303336700F9AA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F827B07E230333D000F9AA6A /* Character View Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character View Model.swift"; sourceTree = "<group>"; };
 		F827B080230336CD00F9AA6A /* SWAPICharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPICharacter.swift; sourceTree = "<group>"; };
+		F89AFED52304ECBE00BD2F4F /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				F827B06C2303336500F9AA6A /* AppDelegate.swift */,
 				F827B06E2303336600F9AA6A /* ViewController.swift */,
+				F89AFED52304ECBE00BD2F4F /* CharacterTableViewController.swift */,
 				F827B07E230333D000F9AA6A /* Character View Model.swift */,
 				F827B080230336CD00F9AA6A /* SWAPICharacter.swift */,
 				F827B0702303336600F9AA6A /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F827B081230336CD00F9AA6A /* SWAPICharacter.swift in Sources */,
+				F89AFED62304ECBE00BD2F4F /* CharacterTableViewController.swift in Sources */,
 				F827B06F2303336600F9AA6A /* ViewController.swift in Sources */,
 				F827B07F230333D000F9AA6A /* Character View Model.swift in Sources */,
 				F827B06D2303336500F9AA6A /* AppDelegate.swift in Sources */,

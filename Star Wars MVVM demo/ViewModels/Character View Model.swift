@@ -16,10 +16,6 @@ import Foundation
  x in the view controller adopt both the protocol (which brings the viewModel class) and the delegate (which can handle reloading the view once the data is finished)
  */
 
-//protocol IsCharacterViewModel: CharacterViewModelDelegate {
-//    var characters: [SWAPICharacter] { get set }
-//}
-
 protocol CharacterViewModelDelegate: AnyObject {
     func fetchCharacters()
     var delegate: CharacterDidFinishDownloadingDelegate? { get set }
@@ -55,4 +51,13 @@ class CharacterViewModel: CharacterViewModelDelegate {
             }
         }.resume()
     }
+    
+    
+    // MARK: - Core Data
+    
+    func fetchFromCoreData() {
+        // load from core data
+    }
+    
+    
 }

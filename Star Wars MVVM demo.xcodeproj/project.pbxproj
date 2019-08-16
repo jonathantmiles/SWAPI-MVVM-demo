@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F804007B230763610079ABE6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804007A230763610079ABE6 /* CoreDataStack.swift */; };
+		F804007D230764D50079ABE6 /* SWAPICharacter+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804007C230764D50079ABE6 /* SWAPICharacter+Convenience.swift */; };
+		F8040086230769580079ABE6 /* Star Wars MVVM demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8040084230769580079ABE6 /* Star Wars MVVM demo.xcdatamodeld */; };
 		F827B06D2303336500F9AA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827B06C2303336500F9AA6A /* AppDelegate.swift */; };
 		F827B06F2303336600F9AA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827B06E2303336600F9AA6A /* ViewController.swift */; };
 		F827B0722303336600F9AA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F827B0702303336600F9AA6A /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F804007A230763610079ABE6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F804007C230764D50079ABE6 /* SWAPICharacter+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWAPICharacter+Convenience.swift"; sourceTree = "<group>"; };
+		F8040085230769580079ABE6 /* Star Wars MVVM demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Star Wars MVVM demo.xcdatamodel"; sourceTree = "<group>"; };
 		F827B0692303336500F9AA6A /* Star Wars MVVM demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars MVVM demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F827B06C2303336500F9AA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F827B06E2303336600F9AA6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +47,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80400762307631B0079ABE6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F827B06E2303336600F9AA6A /* ViewController.swift */,
+				F89AFED52304ECBE00BD2F4F /* CharacterTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F80400772307632E0079ABE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F827B080230336CD00F9AA6A /* SWAPICharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F80400782307633A0079ABE6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F827B07E230333D000F9AA6A /* Character View Model.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F80400792307634E0079ABE6 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F804007A230763610079ABE6 /* CoreDataStack.swift */,
+				F8040084230769580079ABE6 /* Star Wars MVVM demo.xcdatamodeld */,
+				F804007C230764D50079ABE6 /* SWAPICharacter+Convenience.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		F827B0602303336500F9AA6A = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				F827B06C2303336500F9AA6A /* AppDelegate.swift */,
-				F827B06E2303336600F9AA6A /* ViewController.swift */,
-				F89AFED52304ECBE00BD2F4F /* CharacterTableViewController.swift */,
-				F827B07E230333D000F9AA6A /* Character View Model.swift */,
-				F827B080230336CD00F9AA6A /* SWAPICharacter.swift */,
+				F80400772307632E0079ABE6 /* Models */,
+				F80400792307634E0079ABE6 /* Core Data */,
+				F80400782307633A0079ABE6 /* ViewModels */,
+				F80400762307631B0079ABE6 /* View Controllers */,
 				F827B0702303336600F9AA6A /* Main.storyboard */,
 				F827B0732303336700F9AA6A /* Assets.xcassets */,
 				F827B0752303336700F9AA6A /* LaunchScreen.storyboard */,
@@ -147,8 +188,11 @@
 				F827B081230336CD00F9AA6A /* SWAPICharacter.swift in Sources */,
 				F89AFED62304ECBE00BD2F4F /* CharacterTableViewController.swift in Sources */,
 				F827B06F2303336600F9AA6A /* ViewController.swift in Sources */,
+				F804007B230763610079ABE6 /* CoreDataStack.swift in Sources */,
+				F8040086230769580079ABE6 /* Star Wars MVVM demo.xcdatamodeld in Sources */,
 				F827B07F230333D000F9AA6A /* Character View Model.swift in Sources */,
 				F827B06D2303336500F9AA6A /* AppDelegate.swift in Sources */,
+				F804007D230764D50079ABE6 /* SWAPICharacter+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8040084230769580079ABE6 /* Star Wars MVVM demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8040085230769580079ABE6 /* Star Wars MVVM demo.xcdatamodel */,
+			);
+			currentVersion = F8040085230769580079ABE6 /* Star Wars MVVM demo.xcdatamodel */;
+			path = "Star Wars MVVM demo.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F827B0612303336500F9AA6A /* Project object */;
 }
